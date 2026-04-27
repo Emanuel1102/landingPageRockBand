@@ -1,0 +1,68 @@
+/* hero with background image and height of 100% */
+.hero{
+    height: 100vh;
+    background-image: radial-gradient(transparent, var(--primary-color)), url(../img/bg-hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__title, .hero__subtitle{
+    font-size: 4em;        
+    line-height: 5em;
+}
+
+/* events section styles */
+.events{
+    display: flex;
+    flex-direction: column;
+}
+
+.events-table{
+    text-align: center;
+}
+
+.events-table__head{
+    background-color: var(--secondary-color);
+}
+
+.events-table button{
+    padding: .5em 1em;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+/* hover effects */
+.events-table tr:hover{
+    background-color: var(--interaction-color);
+    transition: .2s;
+}
+
+.events-table button:hover{
+    background-color: var(--interaction-color);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
+/* font size in medium screens */
+@media (min-width: 768px) and (max-width: 900px) {
+    .hero__title, .hero__subtitle{
+        font-size: 2em;    
+    }
+}
+
+/* font size in small screens */
+@media (max-width: 768px) {
+    .hero__title, .hero__subtitle{
+        font-size: 1.5em;    
+    }
+}

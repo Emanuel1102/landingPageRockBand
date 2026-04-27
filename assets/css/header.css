@@ -1,0 +1,76 @@
+:root{
+    --border: 1px solid
+}
+
+/* header layout  using flexbox */
+.header{
+    height: var(--height-header);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+/* the image container ocupies the 80% of header height */
+.header__container{
+    height: 80%;
+    border-radius: 1000%;
+    overflow: hidden;
+}
+
+/* the image ocupies the 100% from your container */
+.header__container img{
+    max-height: 100%;
+}
+
+/* navbar and list layout  using flexbox */
+.main-nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+}
+
+.main-list{
+    list-style: none;
+    align-items: center;
+    display: flex;
+    gap: 3em;
+    padding: 1em;
+}
+
+/* button togle styles, hidden by default */
+.main-nav__toggle{
+    align-self: center;
+    padding: 1em;
+    border-radius: var(--radius);
+    border: none;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .main-list{
+        display: none;
+        position: fixed;
+        top: var(--height-header);
+        background-color: var(--interaction-color);
+        border-radius: var(--radius);
+    }
+
+    /* the button toggle is displayed in screen small */
+    .main-nav__toggle{
+        display: block;
+    }
+
+    /* class to alternate the menu */
+    .show-menu{
+        display: flex;
+        flex-direction: column;
+    }
+}

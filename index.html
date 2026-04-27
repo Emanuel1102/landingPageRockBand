@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motionless in white</title>
+    <link rel="shortcut icon" href="./assets/icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/global-styles.css">
+</head>
+<body>
+
+    <!-- the header contains the navbar and the main title presentation -->
+    <header class="header">
+        <!-- the band logo -->
+        <div class="header__container">
+            <img src="assets/icons/band-logo.png" alt="band logo">
+        </div>
+        <!-- navbar for navigation in the site -->
+        <nav class="main-nav">
+            <ul class="main-list">
+                <li class="main-list__item">
+                    <a class="main-list__link" href="#">Home</a>
+                </li>
+                <li class="main-list__item">
+                    <a class="main-list__link" href="#events">Events</a>
+                </li>
+                <li class="main-list__item">
+                    <a class="main-list__link" href="#about">About</a>
+                </li>
+                <li class="main-list__item">
+                    <a class="main-list__link" href="#media">Media</a>
+                </li>
+                <li class="main-list__item">
+                    <a class="main-list__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <!-- button for menu in mobile screen -->
+            <button class="main-nav__toggle">☰</button>
+        </nav>
+        
+    </header>
+
+    <!-- the page main content; events, about and multimedia about the band -->
+    <main class="main-content">
+
+        <!-- the fisrt view that the user has when the page is loaded -->
+        <section class="hero">
+            <h1 class="hero__title">Scoring the end of the world</h1>
+            <h2 class="hero__subtitle">World tour</h2>
+        </section>
+
+        <!-- events section -->
+        <section id="events" class="events container">
+            <h3 class="events__title">Upcoming Events</h3>
+
+            <!-- event dates in a table -->
+            <table class="events-table">
+                <thead class="events-table__head">
+                    <tr>
+                        <th>Date</th>
+                        <th>City</th>
+                        <th>Venue</th>
+                        <th>Tickets</th>
+                    </tr>
+                </thead>
+                <tbody class="events-table__body">
+                    <tr>
+                        <td>15 May</td>
+                        <td>Madrid</td>
+                        <td>Sala Sol</td>
+                        <td><button>Buy</button></td>
+                    </tr>
+                    <tr>
+                        <td>18 May</td>
+                        <td>Barcelona</td>
+                        <td>Razzmatazz</td>
+                        <td><button>Buy</button></td>
+                    </tr>
+                    <tr>
+                        <td>22 May</td>
+                        <td>Valencia</td>
+                        <td>Moon Club</td>
+                        <td><button>Buy</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- about section -->
+        <section id="about" class="about container">
+            
+            <h3 class="about__title">About the Band</h3>
+
+            <!-- band description with a image -->
+            <article class="about__article">
+                <div class="about__img-container">
+                    <!-- <img src="./assets/img/img-1.jpg" alt="Band photo"> -->
+                </div>
+                <p>
+                    Shattered Riffs is a high-energy rock band known for powerful live performances
+                    and raw sound.
+                </p>
+
+            </article>
+
+            <!-- Required list -->
+            <div class="about__container-list">
+                <h4 class="about-list__title">Our Influences</h4>
+                <ul class="about-list">
+                    <li class="about-list__item">Classic Rock</li>
+                    <li class="about-list__item">Hard Rock</li>
+                    <li class="about-list__item">Alternative</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- responsive gallery -->
+        <section id="media" class="media container">
+            <h2>Multimedia</h2>
+
+            <div class="media__grid">
+                <iframe src="https://www.youtube.com/embed/fCYO3wnDij4?si=2fyw48T62cGCEk0N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.youtube.com/embed/nwhUp-NbtRQ?si=_exIe9Fwg1DbovQj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.youtube.com/embed/AskQfb2a-uY?si=ZyDZ_Gc9ABTvmNhx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.youtube.com/embed/Tk2qVnaSNx8?si=Z2pHzR26RsBSOR6X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.youtube.com/embed/Tn8U3H2s0y8?si=Jovkk4iy479misw3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.youtube.com/embed/FWO1niW0krM?si=fug-nU5Iws1cY2Hq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <!-- <img src="./assets/img/img-2.jpg" alt="">
+                <img src="./assets/img/img-3.jpg" alt="">
+                <img src="./assets/img/img-4.jpg" alt="">
+                <img src="./assets/img/img-5.jpg" alt="">
+                <img src="./assets/img/img-6.jpg" alt="">
+                <img src="./assets/img/img-7.jpg" alt=""> -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="contact" class="footer">
+        <p>© <span id="year"></span> Shattered Riffs</p>
+        <div class="footer__container">
+
+            <!-- Another possible list -->
+            <ul class="footer-list">
+                <li class="footer-list__item">
+                    <a class="footer-list__link" href="#">Instagram</a>
+                </li>
+                <li class="footer-list__item">
+                    <a class="footer-list__link" href="#">Spotify</a>
+                </li>
+                <li class="footer-list__item">
+                    <a class="footer-list__link" href="#">YouTube</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- sripts -->
+     <script src="assets/js/toggle.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
